@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluções - Zalven</title>
+
+    <!-- BIBLIOTECAS CSS EXTERNAS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- LINK PARA O SEU ARQUIVO CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="icon" href="./image/favicon.ico">
+</head>
+<body>
+    <!-- index.html (e todas as outras páginas) -->
+<body>
+    
+    <!-- ================== MENU LATERAL (SIDEBAR) PARA MOBILE ================== -->
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="./image/logo.png" class="site-logo img-fluid logo" alt="Zalven Logo" style="height: 40px; width: auto;">
+            </div>
+            <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">Sobre</a></li>
+            <!-- Dropdown Soluções -->
+            <li class="sidebar-dropdown">
+                <div class="dropdown-header">
+                    <a href="#">Soluções</a>
+                    <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="./sistemas-customizados.html">Sistemas Customizados</a></li>
+                    <li><a href="./automacao-de-processos.html">Automação de Processos</a></li>
+                    <li><a href="./chatbots-inteligentes.html">Chatbots Inteligentes</a></li>
+                    <li><a href="./desenvolvimento-web.html">Desenvolvimento Web</a></li>
+                    <li><a href="./consultoria-tecnologica.html">Consultoria Tecnológica</a></li>
+                </ul>
+            </li>
+            <!-- Dropdown Cases -->
+            <li class="sidebar-dropdown">
+                <div class="dropdown-header">
+                    <a href="#">Cases</a>
+                    <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="./cases.html">Cases de Sucesso</a></li>
+                    <li><a href="./team.html">Nosso Time</a></li>
+                    <li><a href="./faq.html">FAQs</a></li>
+                </ul>
+            </li>  
+            <li><a href="./process.html">Processo</a></li>
+            <li><a href="./contact.html">Contato</a></li>
+        </ul>
+    </div>
+    
+    <!-- Section Header com Dropdown -->
+    <header>
+        <div class="navbar-wrapper">
+            <nav class="navbar navbar-expand-xl">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo-container" href="./index.html">
+                        <div style="position: relative; height: 42px; width: 150px;"> 
+                            <img src="./image/logo.png" alt="Zalven Logo" 
+                                 style="position: absolute; top: 40%; transform: translateY(-50%); height: 170px; width: auto;">
+                        </div>
+                    </a>
+                    <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./about.html">Sobre</a></li>
+                            <!-- DROPDOWN "SOLUÇÕES" -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownSolutions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Soluções <i class="fa-solid fa-angle-down accent-color"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
+                                    <li><a class="dropdown-item" href="./sistemas-customizados.html">Sistemas Customizados</a></li>
+                                    <li><a class="dropdown-item" href="./automacao-de-processos.html">Automação de Processos</a></li>
+                                    <li><a class="dropdown-item" href="./chatbots-inteligentes.html">Chatbots Inteligentes</a></li>
+                                    <li><a class="dropdown-item" href="./desenvolvimento-web.html">Desenvolvimento Web</a></li>
+                                    <li><a class="dropdown-item" href="./consultoria-tecnologica.html">Consultoria Tecnológica</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCases" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cases <i class="fa-solid fa-angle-down accent-color"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownCases">
+                                    <li><a class="dropdown-item" href="./cases.html">Cases de Sucesso</a></li>
+                                    <li><a class="dropdown-item" href="./team.html">Nosso Time</a></li>
+                                    <li><a class="dropdown-item" href="./faq.html">FAQs</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="./process.html">Processo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contato</a></li>
+                        </ul>
+                        <div class="navbar-action-container">
+                         <div class="d-flex align-items-center gspace-3">
+                            
+                            
+                            <!-- A MÁGICA ACONTECE AQUI -->
+                            <a href="https://wa.me/5524992324310" target="_blank" class="navbar-icon-wrapper" style="text-decoration: none;">
+                                <div class="icon-circle" style="width: 44px; height: 44px; background-color: var(--accent-color);"><i class="fa-brands fa-whatsapp"></i></div>
+                                <h6>+55 (24) 99232-4310</h6> <!-- Mantenha o formato visual que preferir aqui -->
+                            </a>
+                            
+                         </div>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Main Content -->
+    <main>
+        <!-- Section Banner -->
+        <div class="section-banner">
+            <div class="banner-layout-wrapper">
+                <div class="banner-layout">
+                    <div class="d-flex flex-column text-center align-items-center gspace-2">
+                        <h2 class="title-heading animate-box" data-animate="animate__fadeInRight">Nossas Soluções</h2>
+                        <nav class="breadcrumb">
+                            <a href="./index.html" class="gspace-2">Home</a>
+                            <span class="separator-link">/</span>
+                            <p class="current-page">Soluções</p>
+                        </nav>    
+                    </div>
+                    <div class="spacer"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Section Services Details -->
+        <div class="section pb-0">
+            <div class="hero-container">
+                <div class="d-flex flex-column gspace-5">
+                    
+                    <!-- INTRODUÇÃO -->
+                    <div class="image-container">
+                        <img src="./image/collaborative-process-of-multicultural-skilled-peo-5EHBQRG-1024x683.jpg" alt="Equipe Zalven planejando soluções" class="single-service-img">
+                        <div class="single-service-title-layout">
+                            <div>
+                                <div class="single-service-spacer"></div>
+                                <div class="single-service-title-wrapper">
+                                    <div class="single-service-title">
+                                        <div class="sub-heading animate-box" data-animate="animate__fadeInRight">
+                                            <i class="fa-regular fa-circle-dot"></i>
+                                            <span>Nossas Soluções</span>
+                                        </div>
+                                        <h3 class="title-heading animate-box" data-animate="animate__fadeInRight">Ferramentas de Tecnologia Construídas para o Seu Crescimento</h3>
+                                        <p>Cada solução que oferecemos é projetada com um único objetivo: transformar a maneira como sua empresa opera. Da eliminação de tarefas manuais à criação de sistemas que organizam o caos, nossa expertise em tecnologia é o motor para a sua eficiência.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-service-spacer"></div>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-xl-2 row-cols-1 grid-spacer-5">
+                        <div class="col col-xl-8">
+                            <div class="d-flex flex-column gspace-5">
+
+                                <!-- SERVIÇO 1: SISTEMAS CUSTOMIZADOS -->
+                                <div class="d-flex flex-column gspace-2">
+                                    <h4>Sistemas Customizados: Diga Adeus às Planilhas</h4>
+                                    <p>Sua operação é única, e suas ferramentas também deveriam ser. Construímos sistemas sob medida que se adaptam ao seu fluxo de trabalho, centralizam informações e eliminam a dependência de planilhas complexas e propensas a erros.</p>
+                                    <div class="card service-included">
+                                        <h4>O que está incluído</h4>
+                                        <div class="underline-accent-short"></div>
+                                        <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
+                                            <div class="col">
+                                                <ul class="check-list">
+                                                    <li>Sistemas de Gestão (CRM/ERP)</li>
+                                                    <li>Dashboards e Relatórios em Tempo Real</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <ul class="check-list">
+                                                    <li>Plataformas para Clientes e Fornecedores</li>
+                                                    <li>Migração Segura de Dados de Planilhas</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5>Por que escolher a Zalven para Sistemas?</h5>
+                                    <div class="row row-cols-md-2 row-cols-1">
+                                        <div class="col"><div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start gspace-1"><i class="fa-regular fa-2x fa-circle-check accent-color"></i><div class="d-flex flex-column gspace-0"><h5>Foco no Usuário</h5><p>Sistemas intuitivos que sua equipe vai adorar usar.</p></div></div></div>
+                                        <div class="col"><div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start gspace-1"><i class="fa-regular fa-2x fa-circle-check accent-color"></i><div class="d-flex flex-column gspace-0"><h5>Escalabilidade</h5><p>Construídos para crescer junto com seu negócio.</p></div></div></div>
+                                    </div>
+                                </div>
+                                
+                                <hr>
+
+                                <!-- SERVIÇO 2: AUTOMAÇÃO DE PROCESSOS -->
+                                <div class="d-flex flex-column gspace-2">
+                                    <h4>Automação de Processos: Sua Equipe em Foco Estratégico</h4>
+                                    <p>Tarefas repetitivas consomem o tempo precioso da sua equipe. Nós identificamos e automatizamos esses processos (usando ferramentas como N8N e outras), liberando seus colaboradores para atividades de alto valor e reduzindo custos operacionais.</p>
+                                    <div class="card service-included">
+                                        <h4>O que está incluído</h4>
+                                        <div class="underline-accent-short"></div>
+                                        <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
+                                            <div class="col">
+                                                <ul class="check-list">
+                                                    <li>Mapeamento de Processos e Gargalos</li>
+                                                    <li>Automação de Tarefas Manuais</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <ul class="check-list">
+                                                    <li>Integração entre Ferramentas (APIs)</li>
+                                                    <li>Relatórios de Eficiência e ROI</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5>Por que escolher a Zalven para Automação?</h5>
+                                    <div class="row row-cols-md-2 row-cols-1">
+                                        <div class="col"><div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start gspace-1"><i class="fa-regular fa-2x fa-circle-check accent-color"></i><div class="d-flex flex-column gspace-0"><h5>Expertise em Ferramentas</h5><p>Profundo conhecimento em N8N e outras plataformas.</p></div></div></div>
+                                        <div class="col"><div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start gspace-1"><i class="fa-regular fa-2x fa-circle-check accent-color"></i><div class="d-flex flex-column gspace-0"><h5>Impacto Rápido</h5><p>Soluções que geram economia desde o primeiro dia.</p></div></div></div>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <!-- SERVIÇO 3: CHATBOTS -->
+                                <div class="d-flex flex-column gspace-2">
+                                    <h4>Chatbots Inteligentes: Atendimento 24/7, Clientes Satisfeitos</h4>
+                                    <p>Transforme seu atendimento com chatbots que resolvem problemas. Nossas soluções automatizam o agendamento, qualificam leads e respondem às perguntas mais frequentes, tudo integrado ao seu CRM ou planilhas.</p>
+                                    <div class="card service-included">
+                                        <h4>O que está incluído</h4>
+                                        <div class="underline-accent-short"></div>
+                                        <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
+                                            <div class="col">
+                                                <ul class="check-list">
+                                                    <li>Bots para WhatsApp, Instagram e Sites</li>
+                                                    <li>Integração com Agendas e CRMs</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <ul class="check-list">
+                                                    <li>Fluxos de Atendimento Personalizados</li>
+                                                    <li>Qualificação e Captura de Leads</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5>Por que escolher a Zalven para Chatbots?</h5>
+                                    <div class="row row-cols-md-2 row-cols-1">
+                                        <div class="col"><div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start gspace-1"><i class="fa-regular fa-2x fa-circle-check accent-color"></i><div class="d-flex flex-column gspace-0"><h5>Inteligência Real</h5><p>Chatbots que entendem a intenção e resolvem.</p></div></div></div>
+                                        <div class="col"><div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start gspace-1"><i class="fa-regular fa-2x fa-circle-check accent-color"></i><div class="d-flex flex-column gspace-0"><h5>Integrações Poderosas</h5><p>Conectamos seu bot às ferramentas que você já usa.</p></div></div></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- COLUNA LATERAL -->
+                        <div class="col col-xl-4">
+                            <div class="d-flex flex-column flex-md-row flex-xl-column justify-content-between gspace-5">
+                                <div class="card service-recent">
+                                    <h4>Nossas Soluções</h4>
+                                    <div class="underline-accent-short"></div>
+                                    <ul class="single-service-list">
+                                        <li><a href="#">Sistemas Customizados</a></li>
+                                        <li><a href="#">Automação de Processos</a></li>
+                                        <li><a href="#">Desenvolvimento Web</a></li>
+                                        <li><a href="#">Chatbots e Atendimento</a></li>
+                                        <li><a href="#">Consultoria e Diagnóstico</a></li>
+                                        <li><a href="#">Integração de Sistemas</a></li>
+                                    </ul>
+                                </div>
+                                <div class="cta-service-banner">
+                                    <div class="spacer"></div>
+                                    <h3 class="title-heading">Pronto para Transformar Sua Operação?</h3>
+                                    <p>
+                                        Vamos conversar sobre os desafios específicos do seu negócio e desenhar uma solução tecnológica que gere resultados reais.
+                                    </p>
+                                    <div class="link-wrapper">
+                                        <a href="#contact">Agendar Diagnóstico Gratuito</a>
+                                        <i class="fa-solid fa-circle-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer">
+            <div class="section-footer">
+                <div class="bg-footer-wrapper">
+                    <div class="bg-footer">
+                        <div class="hero-container position-relative z-2">
+                            <div class="d-flex flex-column gspace-2">
+                                <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 grid-spacer-5">
+                                    <div class="col col-xl-4" style="position: relative; min-height: 250px;">
+                                        <div class="logo-container-footer" style="position: absolute; top: -120px; left: -30px; width: 270px;">
+                                            <img src="./image/logo.png" alt="Zalven Logo" class="site-logo img-fluid" style="width: 100%; height: auto;">
+                                        </div>
+                                        <div class="footer-logo-container" style="margin-top: 100px;">
+                                            <h4>Otimizando Operações com Tecnologia</h4>
+                                            <p>Construímos as ferramentas que sua empresa precisa para operar com máxima eficiência e se destacar no mercado.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col col-xl-2">
+                                        <div class="footer-quick-links">
+                                            <h5>Navegação</h5>
+                                            <ul class="footer-list">
+                                                <li><a href="./index.html">Home</a></li>
+                                                <li><a href="./about.html">Sobre Nós</a></li>
+                                                <li><a href="./services.html">Soluções</a></li>
+                                                <li><a href="./cases.html">Cases de Sucesso</a></li>
+                                                <li><a href="./contact.html">Contato</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col col-xl-3">
+                                        <div class="footer-services-container">
+                                            <h5>Principais Soluções</h5>
+                                            <ul class="footer-list">
+                                                <li><a href="#">Sistemas Customizados</a></li>
+                                                <li><a href="#">Automação de Processos</a></li>
+                                                <li><a href="#">Desenvolvimento Web</a></li>
+                                                <li><a href="#">Chatbots Inteligentes</a></li>
+                                                <li><a href="#">Consultoria Tecnológica</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col col-xl-3">
+                                        <div class="footer-contact-container">
+                                            <h5>Contato</h5>
+                                            <ul class="contact-list">
+                                                <li>contato@zalven.com</li>
+                                                <li>(24) 99232-4310</li>
+                                                <li>Atendimento Remoto</li>
+                                            </ul>
+                                            <div class="d-flex flex-column gspace-1">
+                                                <h5>Redes Sociais</h5>
+                                                <div class="social-container">
+                                                    <div class="social-item-wrapper"><a href="https://www.linkedin.com/company/zalven-intelig%C3%AAncia-operacional" target="_blank" class="social-item"><i class="fa-brands fa-linkedin"></i></a></div>
+                                                    <div class="social-item-wrapper"><a href="https://www.instagram.com/zalven.tecnologia/?utm_source=ig_web_button_share_sheet" target="_blank" class="social-item"><i class="fa-brands fa-instagram"></i></a></div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-content-spacer"></div>
+                            </div>
+                            <div class="copyright-container">
+                                <span class="copyright">© 2025 Zalven. Todos os Direitos Reservados.</span>
+                                <div class="d-flex flex-row gspace-2">
+                                <a href="./termos-de-servico.html" class="legal-link">Termos de Serviço</a>
+                                <a href="./politica-de-privacidade.html" class="legal-link">Política de Privacidade</a>
+                            </div>
+                            </div>
+                            <div class="footer-spacer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal para o Vídeo -->
+    <div id="modal-overlay" class="modal-overlay">
+        <span class="my-close"><i class="fa-solid fa-xmark"></i></span>
+        <div class="my-modal">
+            <iframe id="my-video-frame" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <!-- SCRIPTS JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-script.js"></script>
+    <script src="./js/script.js"></script>
+     <!-- =============================================================== -->
+    <!-- SCRIPT DO MENU MOBILE (COLE ISTO NO FINAL DE TODAS AS PÁGINAS) -->
+    <!-- =============================================================== -->
+    <script>
+        const hamburgerBtn = document.querySelector('.navbar-toggler.nav-btn');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.sidebar-overlay');
+        const sidebarCloseBtn = document.querySelector('.sidebar .close-btn');
+
+        if (hamburgerBtn && sidebar && overlay && sidebarCloseBtn) {
+            const openSidebar = () => {
+                sidebar.classList.add('active');
+                overlay.classList.add('active');
+            };
+
+            const closeSidebar = () => {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+            };
+
+            hamburgerBtn.addEventListener('click', openSidebar);
+            sidebarCloseBtn.addEventListener('click', closeSidebar);
+            overlay.addEventListener('click', closeSidebar);
+        }
+
+        const dropdownHeaders = document.querySelectorAll('.sidebar .dropdown-header');
+        dropdownHeaders.forEach(header => {
+            header.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                const currentMenu = this.nextElementSibling;
+                const currentIcon = this.querySelector('.sidebar-dropdown-btn i');
+
+                document.querySelectorAll('.sidebar-dropdown-menu').forEach(menu => {
+                    if (menu !== currentMenu && menu.style.maxHeight) {
+                        menu.style.maxHeight = null;
+                        const iconToReset = menu.previousElementSibling.querySelector('.sidebar-dropdown-btn i');
+                        if (iconToReset) iconToReset.style.transform = 'rotate(0deg)';
+                    }
+                });
+
+                if (currentMenu.style.maxHeight) {
+                    currentMenu.style.maxHeight = null;
+                    if (currentIcon) currentIcon.style.transform = 'rotate(0deg)';
+                } else {
+                    currentMenu.style.maxHeight = currentMenu.scrollHeight + "px";
+                    if (currentIcon) currentIcon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+    </script>
+    <!-- =============================================================== -->
+    
+</body>
+</html>

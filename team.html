@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Time - Zalven</title>
+
+    <!-- BIBLIOTECAS CSS EXTERNAS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- LINK PARA O SEU ARQUIVO CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="icon" href="./image/favicon.ico">
+</head>
+<body>
+    <!-- index.html (e todas as outras páginas) -->
+<body>
+    
+    <!-- ================== MENU LATERAL (SIDEBAR) PARA MOBILE ================== -->
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="./image/logo.png" class="site-logo img-fluid logo" alt="Zalven Logo" style="height: 40px; width: auto;">
+            </div>
+            <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">Sobre</a></li>
+            <!-- Dropdown Soluções -->
+            <li class="sidebar-dropdown">
+                <div class="dropdown-header">
+                    <a href="#">Soluções</a>
+                    <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="./sistemas-customizados.html">Sistemas Customizados</a></li>
+                    <li><a href="./automacao-de-processos.html">Automação de Processos</a></li>
+                    <li><a href="./chatbots-inteligentes.html">Chatbots Inteligentes</a></li>
+                    <li><a href="./desenvolvimento-web.html">Desenvolvimento Web</a></li>
+                    <li><a href="./consultoria-tecnologica.html">Consultoria Tecnológica</a></li>
+                </ul>
+            </li>
+            <!-- Dropdown Cases -->
+            <li class="sidebar-dropdown">
+                <div class="dropdown-header">
+                    <a href="#">Cases</a>
+                    <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="./cases.html">Cases de Sucesso</a></li>
+                    <li><a href="./team.html">Nosso Time</a></li>
+                    <li><a href="./faq.html">FAQs</a></li>
+                </ul>
+            </li>  
+            <li><a href="./process.html">Processo</a></li>
+            <li><a href="./contact.html">Contato</a></li>
+        </ul>
+    </div>
+    
+    <!-- Section Header com Dropdown -->
+    <header>
+        <div class="navbar-wrapper">
+            <nav class="navbar navbar-expand-xl">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo-container" href="./index.html">
+                        <div style="position: relative; height: 42px; width: 150px;"> 
+                            <img src="./image/logo.png" alt="Zalven Logo" 
+                                 style="position: absolute; top: 40%; transform: translateY(-50%); height: 170px; width: auto;">
+                        </div>
+                    </a>
+                    <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./about.html">Sobre</a></li>
+                            <!-- DROPDOWN "SOLUÇÕES" -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Soluções <i class="fa-solid fa-angle-down accent-color"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
+                                    <li><a class="dropdown-item" href="./sistemas-customizados.html">Sistemas Customizados</a></li>
+                                    <li><a class="dropdown-item" href="./automacao-de-processos.html">Automação de Processos</a></li>
+                                    <li><a class="dropdown-item" href="./chatbots-inteligentes.html">Chatbots Inteligentes</a></li>
+                                    <li><a class="dropdown-item" href="./desenvolvimento-web.html">Desenvolvimento Web</a></li>
+                                    <li><a class="dropdown-item" href="./consultoria-tecnologica.html">Consultoria Tecnológica</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownCases" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cases <i class="fa-solid fa-angle-down accent-color"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownCases">
+                                    <li><a class="dropdown-item" href="./cases.html">Cases de Sucesso</a></li>
+                                    <li><a class="dropdown-item" href="./team.html">Nosso Time</a></li>
+                                    <li><a class="dropdown-item" href="./faq.html">FAQs</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="./process.html">Processo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contato</a></li>
+                        </ul>
+                        <div class="navbar-action-container">
+                         <div class="d-flex align-items-center gspace-3">
+                            
+                            
+                            <!-- A MÁGICA ACONTECE AQUI -->
+                            <a href="https://wa.me/5524992324310" target="_blank" class="navbar-icon-wrapper" style="text-decoration: none;">
+                                <div class="icon-circle" style="width: 44px; height: 44px; background-color: var(--accent-color);"><i class="fa-brands fa-whatsapp"></i></div>
+                                <h6>+55 (24) 99232-4310</h6> <!-- Mantenha o formato visual que preferir aqui -->
+                            </a>
+                            
+                         </div>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Main Content -->
+    <main>
+        <!-- Section Banner -->
+        <div class="section-banner">
+            <div class="banner-layout-wrapper">
+                <div class="banner-layout">
+                    <div class="d-flex flex-column text-center align-items-center gspace-2">
+                        <h2 class="title-heading animate-box" data-animate="animate__fadeInRight">Nosso Time</h2>
+                        <nav class="breadcrumb">
+                            <a href="./index.html" class="gspace-2">Home</a>
+                            <span class="separator-link">/</span>
+                            <p class="current-page">Nosso Time</p>
+                        </nav>    
+                    </div>
+                    <div class="spacer"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Team Adaptada para 1 Pessoa -->
+        <div class="section">
+            <div class="hero-container">
+                <div class="team-wrapper">
+                    <div class="card team-layout">
+                        <div class="d-flex flex-column align-items-center gspace-2 animate-box" data-animate="animate__fadeInLeft">
+                            <div class="sub-heading">
+                                <i class="fa-regular fa-circle-dot"></i>
+                                <span>O Especialista por Trás da Solução</span>
+                            </div>
+                            <h2 class="title-heading">Conheça o Arquiteto da Sua Próxima Inovação</h2>
+                        </div>
+                        
+                        <!-- ESTRUTURA MODIFICADA PARA 1 PESSOA -->
+                        <div class="row justify-content-center align-items-center g-5">
+                            <!-- Coluna da Foto e Perfil -->
+                            <div class="col-xl-4 col-md-6">
+                                <div class="d-flex flex-column">
+                                    <div class="image-team">
+                                        <!-- COLOQUE SUA FOTO AQUI -->
+                                        <img src="./samuel.jpg" alt="Samuel" class="img-fluid">
+                                        <div class="social-team-wrapper">
+                                            <div class="social-team-spacer"></div>
+                                            <div class="d-flex flex-column align-items-end">
+                                                <div class="social-team-container">
+                                                    
+                                                    <a href="https://www.linkedin.com/in/samuel-souza-7431372a7/" target="_blank" class="social-item" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                                                    <a href="https://www.instagram.com/samukasaiol?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-item" aria-label="GitHub"><i class="fa-brands fa-instagram"></i></a>
+                                                </div>
+                                                <div class="social-team-spacer"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-profile">
+                                        <h4>Samuel Souza dos Santos</h4>
+                                        <span class="title">Fundador & Arquiteto de Soluções</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Coluna do Texto de Apresentação -->
+                            <div class="col-xl-7 col-md-12 text-start">
+                                <h3 class="title-heading mb-4">Um Apaixonado por Resolver Problemas com Tecnologia</h3>
+                                <p>Olá! Eu sou Samuel, o fundador da Zalven. Minha carreira foi construída sobre uma única premissa: a tecnologia deve servir para simplificar, não para complicar. Passei anos em diversas operações, vendo em primeira mão como tarefas manuais, planilhas intermináveis e a falta de integração travavam o potencial de equipes talentosas.</p>
+                                <p>A Zalven é a materialização da minha missão: aplicar a tecnologia de forma pragmática e inteligente para resolver problemas reais. Cada projeto que assumo é uma parceria. Eu mergulho no seu negócio, entendo suas dores e, junto com você, desenho e construo a solução exata que vai destravar a eficiência e o crescimento da sua empresa.</p>
+                                <div class="link-wrapper mt-4">
+                                    <a href="./contact.html">Vamos conversar sobre seu projeto</a>
+                                    <i class="fa-solid fa-arrow-circle-right accent-color"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spacer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- team.html -->
+
+<!-- ================== Seção 'Por Que Confiar na Zalven' (LAYOUT CORRIGIDO) ================== -->
+<div class="section">
+    <div class="hero-container">
+        <div class="d-flex flex-column flex-xl-row gspace-5">
+            <div class="chooseus-card-container">
+                <div class="d-flex flex-column gspace-2">
+                    
+                    <!-- Card 1: Contato Direto -->
+                    <div class="card card-chooseus animate-box fast" data-animate="animate__fadeInLeft">
+                        <div class="chooseus-icon-wrapper">
+                            <div class="chooseus-spacer above"></div>
+                            <div class="chooseus-icon-layout">
+                                <div class="chooseus-icon"><img src="./image/Icon-2.png" alt="Contato Icon" class="img-fluid"></div>
+                            </div>
+                            <div class="chooseus-spacer below"></div>
+                        </div>
+                        <div class="chooseus-content">
+                            <h4 class="chooseus-title">Contato Direto com o Especialista</h4>
+                            <p>Você fala diretamente com quem desenha e constrói sua solução, garantindo agilidade e alinhamento total do início ao fim do projeto.</p>
+                            <div class="link-wrapper"><a href="#">Saiba Mais</a><i class="fa-solid fa-arrow-circle-right accent-color"></i></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2: Soluções Ágeis -->
+                    <div class="card card-chooseus animate-box" data-animate="animate__fadeInLeft">
+                        <div class="chooseus-icon-wrapper">
+                            <div class="chooseus-spacer above"></div>
+                            <div class="chooseus-icon-layout">
+                                <div class="chooseus-icon"><img src="./image/icon-1.png" alt="Agilidade Icon" class="img-fluid"></div>
+                            </div>
+                            <div class="chooseus-spacer below"></div>
+                        </div>
+                        <div class="chooseus-content">
+                            <h4 class="chooseus-title">Soluções Ágeis e Sem Burocracia</h4>
+                            <p>Sem a complexidade de grandes agências, focamos em entregar valor de forma mais rápida, resolvendo seu problema com eficiência.</p>
+                            <div class="link-wrapper"><a href="#">Saiba Mais</a><i class="fa-solid fa-arrow-circle-right accent-color"></i></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 3: Compromisso Total -->
+                    <div class="card card-chooseus animate-box slow" data-animate="animate__fadeInLeft">
+                        <div class="chooseus-icon-wrapper">
+                            <div class="chooseus-spacer above"></div>
+                            <div class="chooseus-icon-layout">
+                                <div class="chooseus-icon"><img src="./image/Icon-3.png" alt="Resultados Icon" class="img-fluid"></div>
+                            </div>
+                            <div class="chooseus-spacer below"></div>
+                        </div>
+                        <div class="chooseus-content">
+                            <h4 class="chooseus-title">Compromisso Total com Seu Sucesso</h4>
+                            <p>O sucesso do seu projeto é o meu sucesso. Dedico-me a cada detalhe para garantir uma entrega que supere suas expectativas.</p>
+                            <div class="link-wrapper"><a href="#">Saiba Mais</a><i class="fa-solid fa-arrow-circle-right accent-color"></i></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="chooseus-content-container">
+                <div class="d-flex flex-column gspace-5">
+                    <div class="d-flex flex-column gspace-2">
+                        <div class="sub-heading animate-box" data-animate="animate__fadeInDown">
+                            <i class="fa-regular fa-circle-dot"></i>
+                            <span>Por Que Confiar na Zalven?</span>
+                        </div>
+                        <h2 class="title-heading animate-box" data-animate="animate__fadeInDown">Nossa Abordagem é a Sua Vantagem</h2>
+                        <p class="mb-0 animate-box" data-animate="animate__fadeInDown">Na Zalven, unimos experiência e colaboração para desenvolver soluções que geram resultados concretos e relevantes para o seu negócio.</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="./image/parceria.png" alt="Parceria Estratégica" class="chooseus-img">
+                        <div class="card-chooseus-cta-layout">
+                            <div class="chooseus-cta-spacer"></div>
+                            <div class="d-flex flex-column align-items-end">
+                                <div class="chooseus-cta-spacer"></div>    
+                                <div class="card-chooseus-cta-wrapper">
+                                    <div class="card card-chooseus-cta animate-box" data-animate="animate__fadeInUp">
+                                        <h5>Vamos construir juntos a próxima inovação da sua empresa.</h5>
+                                        <div class="link-wrapper"><a href="./contact.html">Agendar uma Conversa</a><i class="fa-solid fa-circle-arrow-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer">
+            <div class="section-footer">
+                <div class="bg-footer-wrapper">
+                    <div class="bg-footer">
+                        <div class="hero-container position-relative z-2">
+                            <div class="d-flex flex-column gspace-2">
+                                <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 grid-spacer-5">
+                                    <div class="col col-xl-4" style="position: relative; min-height: 250px;">
+                                        <div class="logo-container-footer" style="position: absolute; top: -120px; left: -30px; width: 270px;">
+                                            <img src="./image/logo.png" alt="Zalven Logo" class="site-logo img-fluid" style="width: 100%; height: auto;">
+                                        </div>
+                                        <div class="footer-logo-container" style="margin-top: 100px;">
+                                            <h4>Otimizando Operações com Tecnologia</h4>
+                                            <p>Construímos as ferramentas que sua empresa precisa para operar com máxima eficiência e se destacar no mercado.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col col-xl-2">
+                                        <div class="footer-quick-links">
+                                            <h5>Navegação</h5>
+                                            <ul class="footer-list">
+                                                <li><a href="./index.html">Home</a></li>
+                                                <li><a href="./about.html">Sobre Nós</a></li>
+                                                <li><a href="./services.html">Soluções</a></li>
+                                                <li><a href="./cases.html">Cases de Sucesso</a></li>
+                                                <li><a href="./contact.html">Contato</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col col-xl-3">
+                                        <div class="footer-services-container">
+                                            <h5>Principais Soluções</h5>
+                                            <ul class="footer-list">
+                                                <li><a href="#">Sistemas Customizados</a></li>
+                                                <li><a href="#">Automação de Processos</a></li>
+                                                <li><a href="#">Desenvolvimento Web</a></li>
+                                                <li><a href="#">Chatbots Inteligentes</a></li>
+                                                <li><a href="#">Consultoria Tecnológica</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col col-xl-3">
+                                        <div class="footer-contact-container">
+                                            <h5>Contato</h5>
+                                            <ul class="contact-list">
+                                                <li>contato@zalven.com</li>
+                                                <li>(24) 99232-4310</li>
+                                                <li>Atendimento Remoto</li>
+                                            </ul>
+                                            <div class="d-flex flex-column gspace-1">
+                                                <h5>Redes Sociais</h5>
+                                                <div class="social-container">
+                                                    <div class="social-item-wrapper"><a href="https://www.linkedin.com/company/zalven-intelig%C3%AAncia-operacional" target="_blank" class="social-item"><i class="fa-brands fa-linkedin"></i></a></div>
+                                                    <div class="social-item-wrapper"><a href="https://www.instagram.com/zalven.tecnologia/?utm_source=ig_web_button_share_sheet" target="_blank" class="social-item"><i class="fa-brands fa-instagram"></i></a></div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-content-spacer"></div>
+                            </div>
+                            <div class="copyright-container">
+                                <span class="copyright">© 2025 Zalven. Todos os Direitos Reservados.</span>
+                                <div class="d-flex flex-row gspace-2">
+                                <a href="./termos-de-servico.html" class="legal-link">Termos de Serviço</a>
+                                <a href="./politica-de-privacidade.html" class="legal-link">Política de Privacidade</a>
+                            </div>
+                            </div>
+                            <div class="footer-spacer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-script.js"></script>
+    <script src="./js/script.js"></script>
+     <!-- =============================================================== -->
+    <!-- SCRIPT DO MENU MOBILE (COLE ISTO NO FINAL DE TODAS AS PÁGINAS) -->
+    <!-- =============================================================== -->
+    <script>
+        const hamburgerBtn = document.querySelector('.navbar-toggler.nav-btn');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.sidebar-overlay');
+        const sidebarCloseBtn = document.querySelector('.sidebar .close-btn');
+
+        if (hamburgerBtn && sidebar && overlay && sidebarCloseBtn) {
+            const openSidebar = () => {
+                sidebar.classList.add('active');
+                overlay.classList.add('active');
+            };
+
+            const closeSidebar = () => {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+            };
+
+            hamburgerBtn.addEventListener('click', openSidebar);
+            sidebarCloseBtn.addEventListener('click', closeSidebar);
+            overlay.addEventListener('click', closeSidebar);
+        }
+
+        const dropdownHeaders = document.querySelectorAll('.sidebar .dropdown-header');
+        dropdownHeaders.forEach(header => {
+            header.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                const currentMenu = this.nextElementSibling;
+                const currentIcon = this.querySelector('.sidebar-dropdown-btn i');
+
+                document.querySelectorAll('.sidebar-dropdown-menu').forEach(menu => {
+                    if (menu !== currentMenu && menu.style.maxHeight) {
+                        menu.style.maxHeight = null;
+                        const iconToReset = menu.previousElementSibling.querySelector('.sidebar-dropdown-btn i');
+                        if (iconToReset) iconToReset.style.transform = 'rotate(0deg)';
+                    }
+                });
+
+                if (currentMenu.style.maxHeight) {
+                    currentMenu.style.maxHeight = null;
+                    if (currentIcon) currentIcon.style.transform = 'rotate(0deg)';
+                } else {
+                    currentMenu.style.maxHeight = currentMenu.scrollHeight + "px";
+                    if (currentIcon) currentIcon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+    </script>
+    <!-- =============================================================== -->
+</body>
+</html>

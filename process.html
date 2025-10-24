@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Processo - Zalven</title>
+
+    <!-- BIBLIOTECAS CSS EXTERNAS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- LINK PARA O SEU ARQUIVO CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="icon" href="./image/favicon.ico">
+</head>
+<body>
+    <!-- index.html (e todas as outras páginas) -->
+<body>
+    
+    <!-- ================== MENU LATERAL (SIDEBAR) PARA MOBILE ================== -->
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="./image/logo.png" class="site-logo img-fluid logo" alt="Zalven Logo" style="height: 40px; width: auto;">
+            </div>
+            <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">Sobre</a></li>
+            <!-- Dropdown Soluções -->
+            <li class="sidebar-dropdown">
+                <div class="dropdown-header">
+                    <a href="#">Soluções</a>
+                    <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="./sistemas-customizados.html">Sistemas Customizados</a></li>
+                    <li><a href="./automacao-de-processos.html">Automação de Processos</a></li>
+                    <li><a href="./chatbots-inteligentes.html">Chatbots Inteligentes</a></li>
+                    <li><a href="./desenvolvimento-web.html">Desenvolvimento Web</a></li>
+                    <li><a href="./consultoria-tecnologica.html">Consultoria Tecnológica</a></li>
+                </ul>
+            </li>
+            <!-- Dropdown Cases -->
+            <li class="sidebar-dropdown">
+                <div class="dropdown-header">
+                    <a href="#">Cases</a>
+                    <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="./cases.html">Cases de Sucesso</a></li>
+                    <li><a href="./team.html">Nosso Time</a></li>
+                    <li><a href="./faq.html">FAQs</a></li>
+                </ul>
+            </li>  
+            <li><a href="./process.html">Processo</a></li>
+            <li><a href="./contact.html">Contato</a></li>
+        </ul>
+    </div>
+    
+    <!-- Section Header com Dropdown -->
+    <header>
+        <div class="navbar-wrapper">
+            <nav class="navbar navbar-expand-xl">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo-container" href="./index.html">
+                        <div style="position: relative; height: 42px; width: 150px;"> 
+                            <img src="./image/logo.png" alt="Zalven Logo" 
+                                 style="position: absolute; top: 40%; transform: translateY(-50%); height: 170px; width: auto;">
+                        </div>
+                    </a>
+                    <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./about.html">Sobre</a></li>
+                            <!-- DROPDOWN "SOLUÇÕES" -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Soluções <i class="fa-solid fa-angle-down accent-color"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
+                                    <li><a class="dropdown-item" href="./sistemas-customizados.html">Sistemas Customizados</a></li>
+                                    <li><a class="dropdown-item" href="./automacao-de-processos.html">Automação de Processos</a></li>
+                                    <li><a class="dropdown-item" href="./chatbots-inteligentes.html">Chatbots Inteligentes</a></li>
+                                    <li><a class="dropdown-item" href="./desenvolvimento-web.html">Desenvolvimento Web</a></li>
+                                    <li><a class="dropdown-item" href="./consultoria-tecnologica.html">Consultoria Tecnológica</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCases" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cases <i class="fa-solid fa-angle-down accent-color"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownCases">
+                                    <li><a class="dropdown-item" href="./cases.html">Cases de Sucesso</a></li>
+                                    <li><a class="dropdown-item" href="./team.html">Nosso Time</a></li>
+                                    <li><a class="dropdown-item" href="./faq.html">FAQs</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link active" href="./process.html">Processo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contato</a></li>
+                        </ul>
+                        <div class="navbar-action-container">
+                         <div class="d-flex align-items-center gspace-3">
+                            
+                            
+                            <!-- A MÁGICA ACONTECE AQUI -->
+                            <a href="https://wa.me/5524992324310" target="_blank" class="navbar-icon-wrapper" style="text-decoration: none;">
+                                <div class="icon-circle" style="width: 44px; height: 44px; background-color: var(--accent-color);"><i class="fa-brands fa-whatsapp"></i></div>
+                                <h6>+55 (24) 99232-4310</h6> <!-- Mantenha o formato visual que preferir aqui -->
+                            </a>
+                            
+                         </div>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Main Content -->
+    <main>
+        <!-- Section Banner -->
+        <div class="section-banner">
+            <div class="banner-layout-wrapper">
+                <div class="banner-layout">
+                    <div class="d-flex flex-column text-center align-items-center gspace-2">
+                        <h2 class="title-heading animate-box" data-animate="animate__fadeInRight">Da Análise à Solução: Nosso Processo</h2>
+                        <nav class="breadcrumb">
+                            <a href="./index.html" class="gspace-2">Home</a>
+                            <span class="separator-link">/</span>
+                            <p class="current-page">Nosso Processo</p>
+                        </nav>    
+                    </div>
+                    <div class="spacer"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Section Post -->
+        <div class="section">
+            <div class="hero-container">
+                <div class="row row-cols-xl-2 row-cols-1 grid-spacer-5">
+                    <div class="col col-xl-4 order-2 order-xl-1">
+                        <div class="d-flex flex-column flex-md-row flex-xl-column gspace-5">
+                            <div class="card recent-post">
+                                <h4>Nossas Soluções</h4>
+                                <div class="underline-accent-short mb-3"></div>
+                                <!-- Links para outras soluções -->
+                                <div class="d-flex flex-row w-100 gspace-1">
+                                    <div class="image-container"><img src="./image/Icon-4.png" alt="Sistemas Icon" class="img-fluid" style="padding: 15px;"></div>
+                                    <div class="d-grid align-content-center"><a href="./solutions.html" class="blog-link-post">Sistemas Customizados</a></div>
+                                </div>
+                                <div class="d-flex flex-row w-100 gspace-1">
+                                    <div class="image-container"><img src="./image/automacao.png" alt="Automação Icon" class="img-fluid" style="padding: 15px;"></div>
+                                    <div class="d-grid align-content-center"><a href="./solutions.html" class="blog-link-post">Automação de Processos</a></div>
+                                </div>
+                                <div class="d-flex flex-row w-100 gspace-1">
+                                    <div class="image-container"><img src="./image/chatbot.png" alt="Chatbot Icon" class="img-fluid" style="padding: 15px;"></div>
+                                    <div class="d-grid align-content-center"><a href="./solutions.html" class="blog-link-post">Chatbots Inteligentes</a></div>
+                                </div>
+                            </div>
+                            <div class="cta-service-banner">
+                                <div class="spacer"></div>
+                                <h3 class="title-heading">Pronto para Iniciar Sua Transformação?</h3>
+                                <p>O primeiro passo é o nosso diagnóstico gratuito. Vamos descobrir juntos como a tecnologia pode levar seu negócio para o próximo nível.</p>
+                                <div class="link-wrapper">
+                                    <a href="./contact.html">Agendar Diagnóstico</a>
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-8 order-1 order-xl-2">
+                        <div class="d-flex flex-column gspace-3">
+                            <div class="post-image">
+                                <img src="./image/ETAPAS.png" alt="Processo de Planejamento Zalven" class="img-fluid">
+                            </div>
+                            <h3>Como Transformamos Sua Necessidade em uma Solução de Tecnologia</h3>
+                            <div class="underline-muted-full"></div>
+                            
+                            <div>
+                                <p>Na Zalven, acreditamos que a tecnologia de sucesso nasce de um processo bem definido. Não se trata apenas de escrever código, mas de entender profundamente o problema para construir a solução certa. Nosso processo de 4 etapas foi desenhado para garantir transparência, colaboração e, acima de tudo, resultados que impactam positivamente a sua operação.</p>
+                                
+                                <h5 class="mt-4">01. Diagnóstico: A Imersão no Seu Negócio</h5>
+                                <p>Tudo começa com uma conversa. Nesta fase inicial e gratuita, nosso objetivo é ouvir. Queremos entender seus desafios, seus processos atuais, as ferramentas que você usa e, o mais importante, onde você quer chegar. É uma imersão completa para mapear os gargalos e as oportunidades de otimização.</p>
+
+                                <h5 class="mt-4">02. Estratégia: Desenhando o Blueprint da Solução</h5>
+                                <p>Com o diagnóstico em mãos, começamos a arquitetar a solução. Definimos as tecnologias ideais (seja um sistema customizado, uma automação ou um chatbot), desenhamos os fluxos de trabalho e criamos um plano de projeto detalhado. Este é o 'blueprint' que guiará todo o desenvolvimento.</p>
+                            </div>
+
+                            <div class="quote-container">
+                                <p class="quote">
+                                    "Um problema bem definido já está meio resolvido. É por isso que dedicamos tanto tempo à fase de diagnóstico e estratégia."
+                                </p>
+                                <div>
+                                    <h5>Samuel Souza</h5>
+                                    <p class="quote-description">
+                                        Fundador, Zalven
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <h5 class="mt-2">03. Apresentação: Alinhamento e Transparência</h5>
+                            <p>Agendamos uma nova reunião para apresentar o plano de ação. Mostramos de forma clara como a solução proposta irá atacar seus problemas, qual o escopo do projeto, o cronograma de entregas e o investimento necessário. É o momento de alinhar todas as expectativas e garantir que estamos no caminho certo.</p>
+
+                            <h5 class="mt-4">04. Construção: Do Código à Transformação</h5>
+                            <p>Com a luz verde, nosso time de desenvolvimento entra em ação. Construímos a solução seguindo as melhores práticas do mercado, com fases de testes rigorosos para garantir a qualidade e a segurança. A entrega final não é apenas um software, mas uma ferramenta pronta para otimizar sua operação e impulsionar seus resultados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer">
+            <div class="section-footer">
+                <div class="bg-footer-wrapper">
+                    <div class="bg-footer">
+                        <div class="hero-container position-relative z-2">
+                            <div class="d-flex flex-column gspace-2">
+                                <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 grid-spacer-5">
+                                    <div class="col col-xl-4" style="position: relative; min-height: 250px;">
+                                        <div class="logo-container-footer" style="position: absolute; top: -120px; left: -30px; width: 270px;">
+                                            <img src="./image/logo.png" alt="Zalven Logo" class="site-logo img-fluid" style="width: 100%; height: auto;">
+                                        </div>
+                                        <div class="footer-logo-container" style="margin-top: 100px;">
+                                            <h4>Otimizando Operações com Tecnologia</h4>
+                                            <p>Construímos as ferramentas que sua empresa precisa para operar com máxima eficiência e se destacar no mercado.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col col-xl-2">
+                                        <div class="footer-quick-links">
+                                            <h5>Navegação</h5>
+                                            <ul class="footer-list">
+                                                <li><a href="./index.html">Home</a></li>
+                                                <li><a href="./about.html">Sobre Nós</a></li>
+                                                <li><a href="./services.html">Soluções</a></li>
+                                                <li><a href="./cases.html">Cases de Sucesso</a></li>
+                                                <li><a href="./contact.html">Contato</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col col-xl-3">
+                                        <div class="footer-services-container">
+                                            <h5>Principais Soluções</h5>
+                                            <ul class="footer-list">
+                                                <li><a href="#">Sistemas Customizados</a></li>
+                                                <li><a href="#">Automação de Processos</a></li>
+                                                <li><a href="#">Desenvolvimento Web</a></li>
+                                                <li><a href="#">Chatbots Inteligentes</a></li>
+                                                <li><a href="#">Consultoria Tecnológica</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col col-xl-3">
+                                        <div class="footer-contact-container">
+                                            <h5>Contato</h5>
+                                            <ul class="contact-list">
+                                                <li>contato@zalven.com</li>
+                                                <li>(24) 99232-4310</li>
+                                                <li>Atendimento Remoto</li>
+                                            </ul>
+                                            <div class="d-flex flex-column gspace-1">
+                                                <h5>Redes Sociais</h5>
+                                                <div class="social-container">
+                                                    <div class="social-item-wrapper"><a href="https://www.linkedin.com/company/zalven-intelig%C3%AAncia-operacional" target="_blank" class="social-item"><i class="fa-brands fa-linkedin"></i></a></div>
+                                                    <div class="social-item-wrapper"><a href="https://www.instagram.com/zalven.tecnologia/?utm_source=ig_web_button_share_sheet" target="_blank" class="social-item"><i class="fa-brands fa-instagram"></i></a></div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-content-spacer"></div>
+                            </div>
+                            <div class="copyright-container">
+                                <span class="copyright">© 2025 Zalven. Todos os Direitos Reservados.</span>
+                                <div class="d-flex flex-row gspace-2">
+                                <a href="./termos-de-servico.html" class="legal-link">Termos de Serviço</a>
+                                <a href="./politica-de-privacidade.html" class="legal-link">Política de Privacidade</a>
+                            </div>
+                            </div>
+                            <div class="footer-spacer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-script.js"></script>
+    <script src="./js/script.js"></script>
+     <!-- =============================================================== -->
+    <!-- SCRIPT DO MENU MOBILE (COLE ISTO NO FINAL DE TODAS AS PÁGINAS) -->
+    <!-- =============================================================== -->
+    <script>
+        const hamburgerBtn = document.querySelector('.navbar-toggler.nav-btn');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.sidebar-overlay');
+        const sidebarCloseBtn = document.querySelector('.sidebar .close-btn');
+
+        if (hamburgerBtn && sidebar && overlay && sidebarCloseBtn) {
+            const openSidebar = () => {
+                sidebar.classList.add('active');
+                overlay.classList.add('active');
+            };
+
+            const closeSidebar = () => {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+            };
+
+            hamburgerBtn.addEventListener('click', openSidebar);
+            sidebarCloseBtn.addEventListener('click', closeSidebar);
+            overlay.addEventListener('click', closeSidebar);
+        }
+
+        const dropdownHeaders = document.querySelectorAll('.sidebar .dropdown-header');
+        dropdownHeaders.forEach(header => {
+            header.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                const currentMenu = this.nextElementSibling;
+                const currentIcon = this.querySelector('.sidebar-dropdown-btn i');
+
+                document.querySelectorAll('.sidebar-dropdown-menu').forEach(menu => {
+                    if (menu !== currentMenu && menu.style.maxHeight) {
+                        menu.style.maxHeight = null;
+                        const iconToReset = menu.previousElementSibling.querySelector('.sidebar-dropdown-btn i');
+                        if (iconToReset) iconToReset.style.transform = 'rotate(0deg)';
+                    }
+                });
+
+                if (currentMenu.style.maxHeight) {
+                    currentMenu.style.maxHeight = null;
+                    if (currentIcon) currentIcon.style.transform = 'rotate(0deg)';
+                } else {
+                    currentMenu.style.maxHeight = currentMenu.scrollHeight + "px";
+                    if (currentIcon) currentIcon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+    </script>
+    <!-- =============================================================== -->
+
+</body>
+</html>
