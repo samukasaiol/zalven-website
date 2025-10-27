@@ -24,37 +24,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // js/script.js
 
-// ================== 2. MODAL DE VÍDEO (APENAS PARA VÍDEO LOCAL) ==================
+// ================== 2. MODAL DE VÍDEO (PARA YOUTUBE) ==================
 const requestLoaders = document.querySelectorAll('.request-loader');
 const modalOverlay = document.getElementById('modal-overlay');
-const localVideoPlayer = document.getElementById('modal-local-video');
-const localVideoSource = document.getElementById('modal-local-video-source');
+const videoFrame = document.getElementById('my-video-frame');
 const closeModalBtn = document.querySelector('.my-close');
 
 if (requestLoaders.length > 0 && modalOverlay) {
     requestLoaders.forEach(button => {
         button.addEventListener('click', function() {
-            // Pega o caminho do vídeo do atributo data-local-video
-            const videoSrc = this.dataset.localVideo;
-            
-            if (videoSrc && localVideoPlayer) {
-                // Define o caminho do vídeo, carrega e toca
-                localVideoSource.src = videoSrc;
-                localVideoPlayer.load();
-                localVideoPlayer.play();
-                
-                // Mostra o pop-up
+            const videoSrc = this.dataset.video;
+            if (videoSrc && videoFrame) {
+                videoFrame.src = videoSrc;
                 modalOverlay.style.display = 'flex';
             }
         });
     });
 
-    // Função para fechar o modal e parar o vídeo
     const closeModal = () => {
-        if (localVideoPlayer) {
-            localVideoPlayer.pause(); // Para o vídeo
-            localVideoSource.src = ''; // Limpa a fonte
-        }
+        if (videoFrame) videoFrame.src = '';
         modalOverlay.style.display = 'none';
     };
 
