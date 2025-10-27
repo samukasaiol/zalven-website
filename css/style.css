@@ -5545,3 +5545,25 @@ header.header-scrolled .navbar-wrapper {
 
     border: none;
 }
+
+/* css/style.css */
+
+/* ================== CORREÇÃO PARA TEXTO LONGO NO CARD DE CONTATO ================== */
+
+/* 1. Ensina o container a quebrar palavras longas */
+.contact-title .d-grid {
+    overflow-wrap: break-word;
+    word-wrap: break-word; /* Compatibilidade com navegadores mais antigos */
+}
+
+/* 2. Garante que o link do e-mail tenha a aparência correta */
+.contact-email-link {
+    color: var(--primary); /* Mantém a cor original do texto */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    transition: color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+/* 3. Adiciona um efeito de hover para indicar que é clicável */
+.contact-email-link:hover {
+    color: var(--accent-color); /* Muda para a cor de destaque ao passar o mouse */
+}
