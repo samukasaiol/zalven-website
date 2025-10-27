@@ -128,17 +128,22 @@
         <div class="section-banner">
             <div class="banner-video-container keep-dark animate-box" data-animate="animate__fadeInUp">
                 <!-- VÍDEO DE FUNDO DO YOUTUBE -->
-                <video id="banner-video-background" autoplay muted loop playsinline>
-                    <source src="./video/video3.mp4" type="video/mp4">
-                     Seu navegador não suporta vídeos em HTML5.
-                </video>
+                <!-- VÍDEO DE FUNDO (AGORA VINDO DO YOUTUBE) -->
+                    <iframe 
+                        id="banner-video-background" 
+                        frameborder="0" 
+                        allow="autoplay; encrypted-media;"
+                        src="https://www.youtube.com/embed/VmbJ3rZP7o0?autoplay=1&mute=1&loop=1&playlist=VmbJ3rZP7o0&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3">
+                    </iframe>
                 <div class="hero-container position-relative">
                     <div class="d-flex flex-column gspace-2">
                         <h1 class="title-heading-banner animate-box" data-animate="animate__fadeInLeft">Otimize Sua Operação.<br>Automatize Seu Sucesso.<br><span style="display: block; margin-top: -2.5rem; color: #9A93A5; font-weight: 400; font-size: 1.5rem;">Sistemas Inteligentes, Automações e Chatbots</span></h1>
                         <div class="banner-heading">
                             <div class="banner-video-content order-xl-1 order-2 animate-box" data-animate="animate__fadeInUp">
                                 <div class="d-flex flex-column flex-xl-row text-xl-start text-center align-items-center gspace-5">
-                                    <button class="request-loader" data-local-video="./video/Zalven - Introdução.mp4"><i class="fa-solid fa-play"></i></button>
+                                    <button class="request-loader" data-video="https://www.youtube.com/embed/GPlvf9uEpA0?autoplay=1&controls=1&rel=0&loop=1&playlist=GPlvf9uEpA0">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
                                     <p>
                                         Veja como otimizamos sua operação.
                                     </p>
@@ -687,10 +692,10 @@
 <div id="modal-overlay" class="modal-overlay">
     <span class="my-close"><i class="fa-solid fa-xmark"></i></span>
     <div class="my-modal">
-        <video id="modal-local-video" controls style="width: 100%; height: auto;">
-            <source id="modal-local-video-source" src="" type="video/mp4">
-            Seu navegador não suporta a tag de vídeo.
-        </video>
+        <!-- Esta div extra é a 'moldura' que vai cortar o vídeo -->
+        <div class="video-wrapper">
+            <iframe id="my-video-frame" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
     </div>
 </div>
 
